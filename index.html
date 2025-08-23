@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>涩云-SECLOUD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 3px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+
+        .website-card {
+            text-align: center;
+        }
+
+        .website-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .website-card a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .website-card a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .qq-card {
+            text-align: center;
+        }
+
+        .qq-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .qq-card p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .placeholder {
+            color: #ccc;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>涩云官方永久导航页</h1>
+            <p>只发布官方网站和Q群</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">精选网站推荐</h2>
+            <div class="grid">
+                <!-- 网站1 -->
+                <div class="card website-card">
+                    <h3>网站标题1</h3>
+                    <p class="placeholder">请添加网站描述</p>
+                    <a href="https://example1.com" target="_blank">访问网站</a>
+                </div>
+                
+                <!-- 网站2 -->
+                <div class="card website-card">
+                    <h3>网站标题2</h3>
+                    <p class="placeholder">请添加网站描述</p>
+                    <a href="https://example2.com" target="_blank">访问网站</a>
+                </div>
+                
+                <!-- 网站3 -->
+                <div class="card website-card">
+                    <h3>网站标题3</h3>
+                    <p class="placeholder">请添加网站描述</p>
+                    <a href="https://example3.com" target="_blank">访问网站</a>
+                </div>
+                
+                <!-- 网站4 -->
+                <div class="card website-card">
+                    <h3>网站标题4</h3>
+                    <p class="placeholder">请添加网站描述</p>
+                    <a href="https://example4.com" target="_blank">访问网站</a>
+                </div>
+                
+                <!-- 网站5 -->
+                <div class="card website-card">
+                    <h3>网站标题5</h3>
+                    <p class="placeholder">请添加网站描述</p>
+                    <a href="https://example5.com" target="_blank">访问网站</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">QQ群推荐</h2>
+            <div class="grid">
+                <!-- QQ群1 -->
+                <div class="card qq-card">
+                    <h3>QQ群名称1</h3>
+                    <p>群号：987654321</p>
+                    <div class="qr-code">
+                        <span class="placeholder">请上传群二维码</span>
+                    </div>
+                </div>
+                
+                <!-- QQ群2 -->
+                <div class="card qq-card">
+                    <h3>QQ群名称2</h3>
+                    <p>群号：987654321</p>
+                    <div class="qr-code">
+                        <span class="placeholder">请上传群二维码</span>
+                    </div>
+                </div>
+                
+                <!-- QQ群3 -->
+                <div class="card qq-card">
+                    <h3>QQ群名称3</h3>
+                    <p>群号：556677889</p>
+                    <div class="qr-code">
+                        <span class="placeholder">请上传群二维码</span>
+                    </div>
+                </div>
+                
+                <!-- QQ群4 -->
+                <div class="card qq-card">
+                    <h3>QQ群名称4</h3>
+                    <p>群号：112233445</p>
+                    <div class="qr-code">
+                        <span class="placeholder">请上传群二维码</span>
+                    </div>
+                </div>
+                
+                <!-- QQ群5 -->
+                <div class="card qq-card">
+                    <h3>QQ群名称5</h3>
+                    <p>群号：998877665</p>
+                    <div class="qr-code">
+                        <span class="placeholder">请上传群二维码</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 添加交互效果
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transition = 'all 0.3s ease';
+            });
+        });
+
+        // 复制QQ群号功能
+        document.querySelectorAll('.qq-card p').forEach(p => {
+            p.style.cursor = 'pointer';
+            p.title = '点击复制群号';
+            p.addEventListener('click', function() {
+                const groupNumber = this.textContent.replace('群号：', '');
+                navigator.clipboard.writeText(groupNumber).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = '已复制到剪贴板！';
+                    this.style.color = '#667eea';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.color = '#666';
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
